@@ -1,19 +1,21 @@
 # Epub Reader Pro
 
-Epub Reader Pro is a 100% client-side tool for reading and converting EPUB files online, designed to integrate with WordPress.
+This project provides two main features:
 
-This project adheres to the following core tech stack:
-- HTML5
-- Vanilla JavaScript (ES6+)
-- CSS3 (Responsive, Mobile-first)
-- IndexedDB
-- Service Worker (for PWA support)
-- EPUB.js library
-- Web Speech API (for Text-to-Speech)
+1. **EPUB Reader:** A web application for reading EPUB files. Built with EPUB.js, it provides a responsive and interactive interface for accessing books online or offline.
+2. **EPUB to PDF Converter:** A tool to convert EPUB files into PDF documents, leveraging the capabilities of pdf-lib.
 
 ## Features
-- Upload EPUB files via drag & drop / file picker
-- Read and interact with EPUB, using themes, notes, bookmarks
-- EPUB to PDF conversion
+- Progressive Web App (PWA) support for offline access.
+- Interactive and seamless interface for the EPUB reader.
+- Conversion of EPUB files to PDFs with customizable options.
+- WordPress embedding supported via iframe for seamless integration.
 
-Check back for more updates!
+## Setup Instructions
+1. Clone the repository.
+2. Open the `/epub-reader/` folder and launch `index.html` to use the reader.
+3. Open the `/epub-to-pdf/` folder and launch `index.html` to use the converter.
+4. Use any HTTP server to serve the project locally for better functionality.
+
+## Contributing
+Feel free to fork this repository and submit pull requests for new features or bug fixes.
