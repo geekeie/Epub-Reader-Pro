@@ -12,7 +12,7 @@ const RESOURCES_TO_CACHE = [
     './app.js',
     './styles.css',
     './manifest.json',
-    // EPUB.js CDN library
+    // EPUB.js CDN library (with SRI integrity check in HTML)
     'https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js'
 ];
 
