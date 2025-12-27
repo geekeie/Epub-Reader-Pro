@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="converter">
-        <input type="file" id="fileInput" accept=".epub">
-        <button id="convertButton">Convert</button>
+    <div class="container">
+        <div class="header">
+            <h1>EPUB to PDF Converter</h1>
+            <p class="subtitle">Convert your EPUB files to PDF format</p>
+        </div>
+        
+        <div id="converter" class="converter">
+            <div class="upload-area">
+                <input type="file" id="fileInput" accept=".epub" style="display: none;">
+                <button id="uploadBtn" class="btn btn-primary">Select EPUB File</button>
+                <p id="fileName" class="file-name"></p>
+            </div>
+            
+            <button id="convertButton" class="btn btn-convert" disabled>Convert to PDF</button>
+            
+            <div id="progress" class="progress" style="display: none;">
+                <div class="progress-bar">
+                    <div id="progressBar" class="progress-fill"></div>
+                </div>
+                <p id="progressText" class="progress-text">Processing...</p>
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
+            <div id="success" class="success" style="display: none;"></div>
+        </div>
     </div>
+    
+    <!-- Required libraries from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js" 
+            integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" 
+            integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb" 
+            crossorigin="anonymous"></script>
     <script src="converter.js"></script>
 </body>
 </html>
