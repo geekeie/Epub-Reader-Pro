@@ -95,15 +95,11 @@ const initBook = async (bookPath) => {
 };
 
 /**
- * Load sample EPUB file (Alice in Wonderland from Internet Archive)
- * This is a fallback when no file is uploaded
+ * Load sample EPUB file or show upload prompt
+ * This function is called when no file is provided by the user
  */
 const loadSampleBook = () => {
-    // Use a publicly available EPUB file for demonstration
-    const sampleEpubUrl = 'https://s3.amazonaws.com/moby-dick/OPS/package.opf';
-    
-    // Alternative: Use a more reliable sample
-    // For now, we'll show a message to upload a file
+    // Show welcome message prompting user to upload a file
     console.log('No EPUB file provided. Please upload an EPUB file to begin reading.');
     showError('Welcome! Please upload an EPUB file to start reading.');
 };

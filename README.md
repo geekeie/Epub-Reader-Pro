@@ -196,7 +196,6 @@ To embed these tools in WordPress:
 
 - **EPUB.js** (v0.3.93) - EPUB rendering engine
 - **jsPDF** (v2.5.1) - PDF generation library
-- **pdf-lib** (v1.17.1) - PDF manipulation
 - **Service Workers** - PWA and offline functionality
 - **Vanilla JavaScript (ES6+)** - No framework dependencies
 - **CSS3** - Responsive design and animations
